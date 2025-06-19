@@ -1,0 +1,103 @@
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --black: #191919;
+    --white: #F9F9F9;
+    --yellow: #D2FA0E;
+    --orange: #F96E10;
+    --dark-yellow: #F9E310;
+    --violet: #832DFE;
+    --pink: #F40091;
+    --blue: #0005F7;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #ffffff;
+}
+
+.loadContainer {
+    background-color: var(--black);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    position: fixed;
+    top: 0%;
+    z-index: 10;
+}
+
+.loadWelcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loadWelcome>p {
+    font-size: 3rem;
+    letter-spacing: 0.4rem;
+}
+
+.pixelFont {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#pixel {
+    margin-left: 1rem;
+}
+
+.loadCode {
+    margin-top: 2rem;
+    display: flex;
+}
+
+.loadCode>p {
+    font-size: 2rem;
+}
+
+#loadConsole {
+    margin-left: 1rem;
+}
+
+.mainContainer {
+    width: 100%;
+    height: 200vh;
+    background-color: var(--orange);
+    position: absolute;
+    top: 100%;
+}
+
+.mainContainer > h1 {
+    margin-top: 20%;
+    margin-left: 5%;
+    font-size: 4rem;
+    color: var(--white);
+}
+
+.mainContainer > h2 {
+    margin-left: 5%;
+    font-size: 3rem;
+    color: var(--white);
+}

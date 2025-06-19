@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Website</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrambleTextPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/TextPlugin.min.js"></script>
+</head>
+
+<body>
+    <div class="loadContainer">
+        <div class="loadWelcome">
+            <p id="loadText"></p>
+            <p id="pixel" class="pixelFont"></p>
+        </div>
+
+        <div class="loadCode">
+            <p id="loadConsoleRef" class="pixelFont"></p>
+            <p id="loadConsole"></p>
+        </div>
+
+    </div>
+
+    <div class="mainContainer">
+        <h1>Webs que conectan. Estrategias que funcionan.</h1>
+        <h2>Diseño, código y marketing digital para marcas con alma.</h2>
+    </div>
+
+    <script>
+        // 1. Desactivar restauración automática de scroll del navegador
+        if ('scrollRestoration' in history) {
+            history.scrollRestoration = 'manual';
+        }
+
+        // 2. Forzar scroll arriba al cargar
+        window.addEventListener('load', () => {
+            window.scrollTo({ top: 0, behavior: 'auto' });
+        });
+
+        // 3. (Opcional) Asegurar en recargas o al navegar por hashes
+        window.addEventListener('beforeunload', () => {
+            window.scrollTo(0, 0);
+        });
+    </script>
+
+    <script src="./js/script.js" defer></script>
+</body>
+
+</html>
